@@ -1,0 +1,124 @@
+
+:root {
+    --primary: #5558ED;
+    --primary-hover: #4446D8;
+    --background: #E9EDF2;
+    --surface: #FFFFFF;
+    --text-primary: #111827;
+    --text-secondary: #737B88;
+    --border: #D5D9DF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--background);
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--text-primary);
+}
+
+.error-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 48px 40px;
+    background: var(--surface);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.error-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e4b1b1;
+    color: #E54848;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.error-container h1 {
+    margin-bottom: 14px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.error-message {
+    margin-bottom: 22px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.error-code {
+    margin-bottom: 28px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.error-code strong {
+    color: var(--text-primary);
+}
+
+.error-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.primary-button {
+    background: var(--primary);
+    color: white;
+}
+
+.primary-button:hover {
+    background: var(--primary-hover);
+}
+
+.secondary-button {
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.secondary-button:hover {
+    background: #F6F7FB;
+}
+
+footer {
+    margin-top: 36px;
+    color: #A0A6AF;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .error-container {
+        padding: 36px 24px;
+    }
+
+    .error-container h1 {
+        font-size: 22px;
+    }
+}
