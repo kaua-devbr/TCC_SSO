@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="static/css/login.css" />
+  </head>
+
+  <body>
+    <main class="login-container">
+      <header class="header">
+        <div class="logo">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M2 9l10-5 10 5-10 5-10-5z" />
+            <path d="M6 11v5c3 3 9 3 12 0v-5" />
+          </svg>
+        </div>
+
+        <div class="header-text">
+          <h2>Portal do Aluno</h2>
+          <p>Ambiente acadêmico</p>
+        </div>
+      </header>
+
+      <section class="welcome">
+        <h1>Bem-vindo de volta</h1>
+        <p>Acesse sua conta para continuar</p>
+      </section>
+
+
+      <form class="login-form" action="#" method="POST">
+        <!-- Matrícula ou e-mail -->
+        <div class="form-group">
+          <label for="matricula">Matrícula ou e-mail</label>
+
+          <div class="input-container">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+
+            <input
+              type="text"
+              id="matricula"
+              name="matricula"
+              placeholder="Ex.: 20241234 ou nome@email.com"
+              required
+            />
+          </div>
+
+          <small>Use o número de matrícula ou o e-mail cadastrado.</small>
+        </div>
+
+        <!-- Senha -->
+        <div class="form-group">
+          <label for="senha">Senha</label>
+
+          <div class="input-container">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+            />
+
+            <button
+              type="button"
+              class="password-toggle"
+              aria-label="Mostrar senha"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Opções adicionais -->
+        <div class="form-options">
+          <label class="remember">
+            <input type="checkbox" name="lembrar" />
+            <span>Lembrar de mim</span>
+          </label>
+
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+
+   
+        <button type="submit" class="login-button">
+          Entrar no portal
+          <span>→</span>
+        </button>
+      </form>
+
+
+      <footer class="footer">
+        <span class="line"></span>
+        <p>PRECISA DE AJUDA?</p>
+        <span class="line"></span>
+      </footer>
+    </main>
+  </body>
+</html>
